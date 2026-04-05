@@ -1,7 +1,7 @@
 import re
 import pandas as pd
 def parse_multi_account_mt940():
-    with open("/Volumes/amjad_catalog/swift_mt940_recon/raw_data/MT940_sample_2accounts.txt", 'r') as f:
+    with open("Your_Source", 'r') as f:
         content = f.read()
     statement_blocks = re.split(r'\n-}\n',content)
     #print(statement_blocks)
